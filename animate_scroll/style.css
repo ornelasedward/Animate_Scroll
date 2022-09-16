@@ -1,0 +1,59 @@
+body {
+  background-color: #44626b;
+  font-family: "roboto", "sans-serif";
+  font-size: 20px;
+  color: #fae6b1;
+  padding: 0;
+  margin: 0;
+}
+
+section {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  min-height: 110vh;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+
+.hidden2 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(20%);
+  transition: all 1s;
+  transition-delay: 600ms;
+}
+
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+img {
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  margin: 7px;
+}
+
+.logos {
+  display: flex;
+}
+
+.logo:nth-child(2) {
+  transition-delay: 200ms;
+}
+
+.logo:nth-child(3) {
+  transition-delay: 400ms;
+}
+
+.logo:nth-child(4) {
+  transition-delay: 600ms;
+}
